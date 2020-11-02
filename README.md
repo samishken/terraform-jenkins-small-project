@@ -16,6 +16,10 @@ Thridly, run Terraform within Jenkins to spin up an instance using the newly cre
 - it will then run the user data to wait for this volume,
 - then create a file system, install Jenkins on it.
 
+> Once "terraform apply" is completed:
+>> - run "ps aux | grep jenkins" to see if jenkins completely installed.
+
+
 ### key file </br>
 Inside 'instance.tf' there is a data souce which will gives us the ubuntu-bionic-18.04 image. We will this AMI as our AWS instance resource.
 
