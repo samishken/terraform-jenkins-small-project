@@ -7,6 +7,15 @@ Second, run Jenkins job to execute Packer and build a new AMI. </br>
 
 Thridly, run Terraform within Jenkins to spin up an instance using the newly created AMI </br>
 
+## "Terraform Apply"
+- will create 23 new resources.
+- the Jenkins machine,
+- EBS volume,
+- app instance,
+- attache attach the EBS volume with app instance
+- it will then run the user data to wait for this volume,
+- then create a file system, install Jenkins on it.
+
 ### key file </br>
 Inside 'instance.tf' there is a data souce which will gives us the ubuntu-bionic-18.04 image. We will this AMI as our AWS instance resource.
 
