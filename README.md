@@ -1,4 +1,4 @@
-# terraform-Jenkins-And-Packer
+# I used terraform-Jenkins-And-Packer for thsi small project
 
 ## This project will
 First, run "Terraform Apply" to spin up Jenkins Instance </br>
